@@ -1,0 +1,19 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "CustomHeader\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "CustomHeader\\CustomHeader",
+    "author": "https://github.com/rusbey95 , rusikbey95@gmail.com",
+    "label": {
+      "de-DE": "Benutzerdefinierter Header plugin",
+      "en-GB": "Custom Header plugin"
+    }
+  }
+}

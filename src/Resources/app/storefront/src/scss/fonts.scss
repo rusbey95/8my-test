@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Montserrat';
+        src: url('#{$app-css-relative-asset-path}/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('#{$app-css-relative-asset-path}/fonts/Montserrat-Bold.woff') format('woff'),
+        url('#{$app-css-relative-asset-path}/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}

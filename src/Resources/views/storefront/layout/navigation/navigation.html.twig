@@ -1,0 +1,15 @@
+{% sw_extends '@Storefront/storefront/layout/navigation/navigation.html.twig' %}
+
+{% block layout_main_navigation %}
+    <div class="main-navigation justify-content-center" id="mainNavigation" data-flyout-menu="true">
+        {% block layout_main_navigation_navbar %}
+            {% block layout_main_navigation_menu %}
+                {{ parent() }}
+            {% endblock %}
+        {% endblock %}
+        
+        {% block layout_main_navigation_menu_flyout_wrapper %}
+            {{ parent() }}
+        {% endblock %}
+    </div>
+{% endblock %}

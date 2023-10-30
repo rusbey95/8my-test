@@ -1,0 +1,53 @@
+{
+  "name": "CustomHeader",
+  "author": "https://github.com/rusbey95 , rusikbey95@gmail.com",
+  "description": {
+    "en-GB": "Header Anpassung",
+    "de-DE": "Header customization"
+  },
+  "views": [
+     "@Storefront",
+     "@Plugins",
+     "@CustomHeader"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss",
+    "app/storefront/src/scss/fonts.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/custom-header.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "config": {
+    "fields": {
+      "sw-color-brand-primary": {
+        "label": {
+          "en-GB": "Primary colour",
+          "de-DE": "Primärfarbe"
+        },
+        "type": "color",
+        "value": "#d2a371",
+        "editable": true,
+        "block": "themeColors",
+        "order": 100
+      },
+      "sw-text-color": {
+        "label": {
+          "en-GB": "Text colour",
+          "de-DE": "Textfarbe"
+        },
+        "type": "color",
+        "value": "#2b2b2b",
+        "editable": true,
+        "block": "typography",
+        "order": 200
+      }
+    }
+  }
+}
